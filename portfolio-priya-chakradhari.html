@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priya Chakradhari - Data Analyst Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0a0a;color:#fff;line-height:1.6;overflow-y:scroll;scroll-snap-type:y mandatory;height:100vh;overflow-x:hidden;-webkit-overflow-scrolling:touch}.portfolio-header{position:relative;width:100%;height:100vh;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#16213e 100%);overflow:hidden;display:flex;align-items:center;justify-content:center;scroll-snap-align:start;opacity:1}.network-canvas{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}.content-overlay{position:relative;z-index:2;text-align:center;color:#fff;max-width:800px;padding:2rem}.main-title{font-size:clamp(2.5rem,6vw,4rem);font-weight:700;margin-bottom:1rem;background:linear-gradient(135deg,#00d4ff,#0099cc,#fff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.subtitle{font-size:clamp(1.1rem,2.5vw,1.5rem);color:#a0a0a0;margin-bottom:2rem}.cta-button{display:inline-block;padding:1rem 2rem;background:linear-gradient(135deg,#00d4ff,#0099cc);color:#fff;text-decoration:none;border-radius:50px;font-weight:600;transition:all .3s;box-shadow:0 10px 30px rgba(0,212,255,.3)}.cta-button:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(0,212,255,.5)}.nav-bar{position:fixed;top:0;width:100%;background:rgba(10,10,10,.95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;scroll-snap-stop:normal}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}.logo{font-size:1.5rem;font-weight:700;color:#00d4ff;background:linear-gradient(135deg,rgba(0,212,255,.2),rgba(0,153,204,.2));padding:.6rem 1.2rem;border-radius:12px;border:2px solid rgba(0,212,255,.4);box-shadow:0 4px 15px rgba(0,212,255,.3);transition:all .3s;letter-spacing:2px}.logo:hover{background:linear-gradient(135deg,rgba(0,212,255,.3),rgba(0,153,204,.3));border-color:#00d4ff;box-shadow:0 6px 20px rgba(0,212,255,.5);transform:scale(1.05)}.logo .name-full{display:inline-block;background:linear-gradient(135deg,#00d4ff,#0099cc,#fff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:1px}.nav-links{display:flex;list-style:none;gap:2rem}.nav-links a{color:#fff;text-decoration:none;transition:color .3s;font-weight:500}.nav-links a:hover{color:#00d4ff}.main-content{background:#0a0a0a;width:100%}.section{padding:5rem 2rem;max-width:1200px;margin:0 auto;scroll-snap-align:start;scroll-snap-stop:always;min-height:100vh;display:flex;flex-direction:column;justify-content:center}.section-title{font-size:clamp(2rem,4vw,3rem);font-weight:700;text-align:center;margin-bottom:3rem;color:#4da6ff}.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(450px,1fr));gap:2rem;margin-top:3rem}.about-card{background:rgba(26,38,54,.5);padding:2.5rem;border-radius:20px;border:1px solid rgba(77,166,255,.3)}.about-card h3{font-size:1.8rem;margin-bottom:1.5rem;font-weight:600}.about-card.cyan h3{color:#00d4ff}.about-card.purple h3{color:#b366ff}.about-card p{color:#c0c0c0;line-height:1.8}.skill-category{margin-bottom:3rem;padding:2rem;background:rgba(26,38,54,.3);border-radius:15px;border-left:4px solid #00d4ff;transition:all .3s}.skill-category:hover{background:rgba(26,38,54,.5);transform:translateX(5px)}.skill-category-title{color:#00d4ff;font-size:1.3rem;margin-bottom:1.5rem;font-weight:600;display:flex;align-items:center;gap:.5rem}.skill-category-title:before{content:"▸";font-size:1.5rem}.skill-tags-container{display:flex;flex-wrap:wrap;gap:.8rem}.skill-tag{background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(0,153,204,.15));color:#fff;padding:.6rem 1.2rem;border-radius:25px;font-size:.9rem;border:1px solid rgba(0,212,255,.3);transition:all .3s;font-weight:500}.skill-tag:hover{background:linear-gradient(135deg,rgba(0,212,255,.3),rgba(0,153,204,.3));border-color:#00d4ff;transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,212,255,.2)}.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem}.project-card{background:#0d1117;border-radius:15px;overflow:hidden;border:1px solid rgba(77,166,255,.2);transition:all .3s}.project-card:hover{transform:translateY(-8px);border-color:#4da6ff}.project-header{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.5rem}.project-header.blue{background:linear-gradient(135deg,#00d4ff,#0099cc)}.project-header.pink{background:linear-gradient(135deg,#ff66cc,#c39)}.project-header.green{background:linear-gradient(135deg,#0f9,#0c6)}.project-content{padding:1.5rem}.project-content h3{color:#fff;margin-bottom:.8rem;font-size:1.2rem}.project-content p{color:#888;margin-bottom:1rem;font-size:.9rem}.project-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}.tag{background:rgba(77,166,255,.2);color:#4da6ff;padding:.3rem .8rem;border-radius:15px;font-size:.75rem;border:1px solid rgba(77,166,255,.3)}.project-link{display:inline-flex;align-items:center;gap:.4rem;color:#00d4ff;text-decoration:none;font-weight:600;font-size:.85rem;transition:all .3s}.project-link:hover{color:#fff;transform:translateX(3px)}.project-link svg{width:16px;height:16px}.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}.cert-card{background:#0d1117;padding:1.8rem;border-radius:15px;border:1px solid rgba(77,166,255,.2);position:relative;transition:all .3s}.cert-card:hover{transform:translateY(-5px);border-color:#4da6ff}.cert-header{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}.cert-icon{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}.cert-icon.blue{background:#4da6ff}.cert-icon.orange{background:#f83}.cert-icon.cyan{background:#00d4ff}.cert-icon.green{background:#6f6}.cert-icon.pink{background:#f6c}.cert-icon.purple{background:#96f}.cert-info h3{color:#fff;font-size:1.1rem;margin-bottom:.3rem}.cert-info .issuer{color:#888;font-size:.85rem}.cert-card p{color:#a0a0a0;font-size:.85rem;line-height:1.6;margin-bottom:1rem}.cert-badge{display:inline-block;background:rgba(77,166,255,.2);color:#4da6ff;padding:.3rem .8rem;border-radius:15px;font-size:.75rem;border:1px solid rgba(77,166,255,.3)}.cert-indicator{position:absolute;bottom:1.5rem;right:1.5rem;width:10px;height:10px;border-radius:50%}.cert-indicator.blue{background:#4da6ff}.cert-indicator.orange{background:#f83}.cert-indicator.green{background:#6f6}.cert-indicator.pink{background:#f6c}.cert-indicator.purple{background:#96f}.experience-grid{display:grid;gap:2rem;margin-top:3rem}.experience-card{background:rgba(26,38,54,.5);padding:2rem;border-radius:15px;border:1px solid rgba(77,166,255,.2)}.experience-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem}.experience-title h3{color:#fff;font-size:1.4rem;margin-bottom:.3rem}.experience-title .company{color:#4da6ff;font-size:1rem}.experience-title .location{color:#888;font-size:.9rem}.experience-date{background:rgba(77,166,255,.2);color:#4da6ff;padding:.4rem 1rem;border-radius:20px;font-size:.85rem;white-space:nowrap}.experience-description{color:#c0c0c0;margin-bottom:1.5rem;line-height:1.7}.experience-content{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.achievements h4,.technologies h4{color:#fff;font-size:1rem;margin-bottom:.8rem}.achievements ul{list-style:none}.achievements li{color:#a0a0a0;font-size:.9rem;margin-bottom:.5rem;padding-left:1.2rem;position:relative}.achievements li:before{content:"•";color:#4da6ff;font-weight:700;position:absolute;left:0}.tech-tags{display:flex;flex-wrap:wrap;gap:.5rem}.tech-tag{background:rgba(77,166,255,.15);color:#4da6ff;padding:.4rem .9rem;border-radius:15px;font-size:.8rem;border:1px solid rgba(77,166,255,.3)}.tech-tag.excel{background:rgba(33,115,70,.3);color:#6f9;border-color:rgba(102,255,153,.3)}.tech-tag.python{background:rgba(255,215,0,.15);color:#fd7;border-color:rgba(255,215,0,.3)}.tech-tag.sql{background:rgba(255,102,0,.15);color:#f96;border-color:rgba(255,153,102,.3)}.tech-tag.tableau{background:rgba(230,126,34,.15);color:#e67e22;border-color:rgba(230,126,34,.3)}.tech-tag.powerbi{background:rgba(255,193,7,.15);color:#fc7;border-color:rgba(255,193,7,.3)}.tech-tag.bi{background:rgba(138,43,226,.15);color:#96f;border-color:rgba(153,102,255,.3)}.contact-content{text-align:center;max-width:800px;margin:3rem auto}.contact-content p{color:#a0a0a0;font-size:1.1rem;margin-bottom:2rem}.contact-buttons{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}.contact-btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.8rem;background:rgba(26,38,54,.5);color:#4da6ff;text-decoration:none;border-radius:10px;border:1px solid rgba(77,166,255,.3);font-weight:500;transition:all .3s}.contact-btn:hover{background:rgba(77,166,255,.1);border-color:#4da6ff;transform:translateY(-3px)}.contact-btn svg{width:20px;height:20px}.contact-container{max-width:900px;margin:0 auto}.contact-intro{text-align:center;margin-bottom:3rem}.contact-intro h3{font-size:clamp(1.5rem,3vw,2rem);color:#00d4ff;margin-bottom:1rem;font-weight:600}.contact-intro p{color:#a0a0a0;font-size:1.1rem;line-height:1.8;max-width:700px;margin:0 auto}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem;max-width:1200px}@media(max-width:1000px){.contact-grid{grid-template-columns:1fr}}.contact-card{display:flex;align-items:center;gap:1.2rem;padding:1.8rem;background:linear-gradient(135deg,rgba(26,38,54,.6),rgba(26,38,54,.3));border:1px solid rgba(77,166,255,.2);border-radius:15px;text-decoration:none;transition:all .4s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden}.contact-card:before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(0,212,255,.1),transparent);transition:left .5s}.contact-card:hover:before{left:100%}.contact-card:hover{transform:translateY(-8px);border-color:#00d4ff;box-shadow:0 15px 40px rgba(0,212,255,.25);background:linear-gradient(135deg,rgba(26,38,54,.8),rgba(26,38,54,.5))}.contact-icon-wrapper{width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}.email-card .contact-icon-wrapper{background:linear-gradient(135deg,rgba(0,212,255,.2),rgba(0,153,204,.2))}.linkedin-card .contact-icon-wrapper{background:linear-gradient(135deg,rgba(10,102,194,.2),rgba(0,119,181,.2))}.github-card .contact-icon-wrapper{background:linear-gradient(135deg,rgba(36,41,46,.5),rgba(22,27,34,.5))}.contact-card:hover .contact-icon-wrapper{transform:scale(1.1) rotate(5deg)}.contact-icon{width:26px;height:26px;color:#00d4ff}.github-card .contact-icon{color:#fff}.contact-details{flex:1}.contact-details h4{color:#fff;font-size:1.1rem;margin-bottom:.3rem;font-weight:600}.contact-details p{color:#888;font-size:.9rem;margin:0}.contact-arrow{color:#00d4ff;font-size:1.5rem;font-weight:300;transition:all .3s;opacity:.7}.contact-card:hover .contact-arrow{transform:translateX(5px);opacity:1}.contact-cta{text-align:center;padding:2rem;background:rgba(26,38,54,.3);border-radius:15px;border:1px solid rgba(77,166,255,.15)}.availability-status{display:inline-flex;align-items:center;gap:.8rem;color:#a0a0a0;font-size:1rem;font-weight:500}.status-dot{width:10px;height:10px;border-radius:50%;background:#0f9;box-shadow:0 0 15px rgba(0,255,153,.6);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.7;transform:scale(1.1)}}.contact-container{max-width:900px;margin:0 auto}.contact-intro{text-align:center;margin-bottom:3rem;padding:0 1rem}.contact-intro h3{color:#00d4ff;font-size:1.8rem;margin-bottom:1rem;font-weight:600}.contact-intro p{color:#a0a0a0;font-size:1.1rem;line-height:1.8}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2rem;max-width:1200px}@media(max-width:1000px){.contact-grid{grid-template-columns:1fr}}.contact-card{display:flex;align-items:center;gap:1.5rem;padding:2rem;background:linear-gradient(135deg,rgba(26,38,54,.4),rgba(22,33,62,.4));border-radius:20px;border:1px solid rgba(77,166,255,.2);text-decoration:none;transition:all .4s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden}.contact-card:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,rgba(0,212,255,.1),transparent);opacity:0;transition:opacity .4s}.contact-card:hover{transform:translateY(-8px);border-color:#00d4ff;box-shadow:0 20px 40px rgba(0,212,255,.2)}.contact-card:hover:before{opacity:1}.contact-icon-wrapper{width:60px;height:60px;border-radius:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .4s}.email-card .contact-icon-wrapper{background:linear-gradient(135deg,#00d4ff,#0099cc)}.linkedin-card .contact-icon-wrapper{background:linear-gradient(135deg,#0077b5,#005582)}.github-card .contact-icon-wrapper{background:linear-gradient(135deg,#333,#000)}.contact-card:hover .contact-icon-wrapper{transform:scale(1.1) rotate(5deg)}.contact-icon{width:30px;height:30px;color:#fff}.contact-details{flex:1}.contact-details h4{color:#fff;font-size:1.1rem;margin-bottom:.3rem;font-weight:600}.contact-details p{color:#a0a0a0;font-size:.9rem;margin:0}.contact-arrow{font-size:1.5rem;color:#00d4ff;transition:transform .4s}.contact-card:hover .contact-arrow{transform:translateX(8px)}.contact-cta{text-align:center;margin-top:3rem}.availability-status{display:inline-flex;align-items:center;gap:.8rem;padding:1rem 2rem;background:rgba(26,38,54,.4);border:1px solid rgba(77,166,255,.2);border-radius:50px;color:#00d4ff;font-weight:500;font-size:1rem}.status-dot{width:10px;height:10px;background:#0f9;border-radius:50%;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}.footer{background:rgba(10,10,15,.95);padding:2rem 0;text-align:center;border-top:1px solid rgba(77,166,255,.1);color:#888;scroll-snap-align:end;min-height:auto}@media(max-width:768px){.nav-links{display:none}.about-grid,.experience-content{grid-template-columns:1fr}.section{padding:3rem 1rem;min-height:100vh}.logo{font-size:1.2rem}body{scroll-snap-type:y proximity}}
+</style>
+</head>
+<body>
+<nav class="nav-bar">
+<div class="nav-container">
+<div class="logo"><span class="name-full">Priya Chakradhari</span></div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+<section id="home" class="portfolio-header">
+<canvas class="network-canvas" id="networkCanvas"></canvas>
+<div class="content-overlay">
+<h1 class="main-title">Priya Chakradhari</h1>
+<p class="subtitle">Data Analyst & Engineer | Python, SQL, Power BI & Azure Databricks | ML & AI Workflow Automation<br>Transforming Data into Actionable Insights</p>
+<div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+<a href="#about" class="cta-button">Explore My Work</a>
+<a href="https://drive.google.com/file/d/1BHg1slzfWf8bJ4u0yxhHPPRVKH93x7k-/view?usp=drive_link" target="_blank" class="cta-button" style="background:linear-gradient(135deg,#b366ff,#9933ff)">Download My Resume</a>
+</div>
+</div>
+</section>
+<main class="main-content">
+<section id="about" class="section">
+<h2 class="section-title">About Me</h2>
+<div class="about-grid">
+<div class="about-card cyan">
+<h3>Professional Background</h3>
+<p>My journey into data analytics started with a simple question: "What story is hidden in this spreadsheet?" That curiosity has taken me from analyzing sales patterns in Excel to building end-to-end data pipelines in Azure. Currently at Krishnav Tech, I'm working with SQL Server, PySpark, and Azure Databricks—turning raw data into insights that actually matter. Before this, I spent two months at ELEVATE LABS learning the ropes of real-time data visualization, which taught me that a well-designed dashboard can speak louder than a hundred-page report. I've completed job simulations with Deloitte and Goldman Sachs, earning certifications from platforms like HackerRank and Kaggle along the way. What drives me isn't just the tech—it's the "aha" moment when stakeholders see patterns they never noticed before.</p>
+</div>
+<div class="about-card purple">
+<h3>Technical Expertise</h3>
+<p>I'm fluent in Python (Pandas, NumPy, Scikit-learn, Matplotlib), SQL, Power BI, Tableau, and advanced Excel—basically, if it involves data, I've probably built something with it. My sweet spot? Taking messy datasets and transforming them into interactive dashboards that decision-makers can actually use. I know my way around dimensional modeling (Star and Snowflake schemas, fact and dimension tables, SCD types), and I've designed ERDs and databases that hold up in production. Recently, I've been exploring AI workflow automation with n8n and Make, because who doesn't love watching repetitive tasks handle themselves? Whether it's writing complex SQL queries with CTEs and window functions, creating predictive models in Python, or building ETL pipelines in Azure Data Factory, I believe the best technical skills are the ones that solve real problems—not just the ones that look good on a resume.</p>
+</div>
+</div>
+</section>
+<section id="skills" class="section">
+<h2 class="section-title">Skills & Expertise</h2>
+<div style="max-width:1100px;margin:0 auto">
+<div class="skill-category">
+<h3 class="skill-category-title">Programming & Data Manipulation</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">Python</span>
+<span class="skill-tag">Pandas</span>
+<span class="skill-tag">NumPy</span>
+<span class="skill-tag">Matplotlib</span>
+<span class="skill-tag">Seaborn</span>
+<span class="skill-tag">Plotly</span>
+<span class="skill-tag">Scikit-learn</span>
+<span class="skill-tag">SQL</span>
+<span class="skill-tag">MySQL</span>
+<span class="skill-tag">Queries & Joins</span>
+<span class="skill-tag">Aggregations</span>
+</div>
+</div>
+<div class="skill-category">
+<h3 class="skill-category-title">Data Visualization & Analytics</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">Power BI</span>
+<span class="skill-tag">Interactive Dashboards</span>
+<span class="skill-tag">Filters & Slicers</span>
+<span class="skill-tag">Advanced Excel</span>
+<span class="skill-tag">Pivot Tables</span>
+<span class="skill-tag">Excel Dashboards</span>
+<span class="skill-tag">Tableau</span>
+</div>
+</div>
+<div class="skill-category">
+<h3 class="skill-category-title">Data Concepts & Analysis</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">Exploratory Data Analysis</span>
+<span class="skill-tag">Data Mining</span>
+<span class="skill-tag">Data Storytelling</span>
+<span class="skill-tag">Descriptive Statistics</span>
+<span class="skill-tag">Inferential Statistics</span>
+<span class="skill-tag">Hypothesis Testing</span>
+<span class="skill-tag">A/B Testing</span>
+<span class="skill-tag">Regression Analysis</span>
+<span class="skill-tag">Correlation Analysis</span>
+<span class="skill-tag">Data Cleaning</span>
+<span class="skill-tag">Data Transformation</span>
+<span class="skill-tag">Star Schema</span>
+<span class="skill-tag">Snowflake Schema</span>
+<span class="skill-tag">Fact & Dimension Tables</span>
+<span class="skill-tag">SCD (Type 0-6)</span>
+<span class="skill-tag">Normalization</span>
+<span class="skill-tag">Denormalization</span>
+<span class="skill-tag">ERD Design</span>
+<span class="skill-tag">Primary & Foreign Keys</span>
+</div>
+</div>
+<div class="skill-category">
+<h3 class="skill-category-title">Machine Learning</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">Supervised Learning</span>
+<span class="skill-tag">Unsupervised Learning</span>
+<span class="skill-tag">Linear Regression</span>
+<span class="skill-tag">Logistic Regression</span>
+<span class="skill-tag">Decision Tree</span>
+<span class="skill-tag">Random Forest</span>
+<span class="skill-tag">K-Means Clustering</span>
+<span class="skill-tag">KNN</span>
+<span class="skill-tag">Naive Bayes</span>
+<span class="skill-tag">Support Vector Machine</span>
+<span class="skill-tag">Feature Engineering</span>
+<span class="skill-tag">Model Evaluation</span>
+<span class="skill-tag">Cross-Validation</span>
+<span class="skill-tag">Overfitting & Underfitting</span>
+<span class="skill-tag">Statistical Inference</span>
+<span class="skill-tag">Predictive Modeling</span>
+<span class="skill-tag">Train-Test Split</span>
+<span class="skill-tag">Confusion Matrix</span>
+</div>
+</div>
+<div class="skill-category">
+<h3 class="skill-category-title">Automation & Development Tools</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">AI Agent Workflows</span>
+<span class="skill-tag">n8n</span>
+<span class="skill-tag">Make</span>
+<span class="skill-tag">RAG</span>
+<span class="skill-tag">MCP</span>
+<span class="skill-tag">Git</span>
+<span class="skill-tag">GitHub</span>
+<span class="skill-tag">VS Code</span>
+<span class="skill-tag">Jupyter Notebook</span>
+<span class="skill-tag">Google Colab</span>
+<span class="skill-tag">Airtable</span>
+<span class="skill-tag">Canva</span>
+</div>
+</div>
+<div class="skill-category">
+<h3 class="skill-category-title">Data Engineering & Governance (Exploring)</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">ETL Pipeline Design</span>
+<span class="skill-tag">Batch Load</span>
+<span class="skill-tag">Incremental Load</span>
+<span class="skill-tag">CDC</span>
+<span class="skill-tag">Workflow Orchestration</span>
+<span class="skill-tag">Apache Airflow</span>
+<span class="skill-tag">Azure Data Factory</span>
+<span class="skill-tag">Data Quality</span>
+<span class="skill-tag">Data Governance</span>
+<span class="skill-tag">Metadata Management</span>
+<span class="skill-tag">Data Lineage</span>
+</div>
+</div>
+<div class="skill-category">
+<h3 class="skill-category-title">Soft Skills</h3>
+<div class="skill-tags-container">
+<span class="skill-tag">Communication & Collaboration</span>
+<span class="skill-tag">Analytical Thinking</span>
+<span class="skill-tag">Problem-Solving</span>
+<span class="skill-tag">Teamwork</span>
+<span class="skill-tag">Adaptability</span>
+<span class="skill-tag">Time Management</span>
+<span class="skill-tag">Growth Mindset</span>
+<span class="skill-tag">Self-Motivation</span>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="section">
+<h2 class="section-title">Professional Experience</h2>
+<div class="experience-grid">
+<div class="experience-card">
+<div class="experience-header">
+<div class="experience-title">
+<h3>Data Analytics and Engineering</h3>
+<p class="company">Krishnav Tech</p>
+<p class="location">Raipur, Chhattisgarh, India</p>
+</div>
+<div class="experience-date">Jul 2025 - Present • 4 mos</div>
+</div>
+<p class="experience-description">Working as an intern in data analytics and engineering, focusing on database management and SQL server administration. Developing skills in data engineering pipelines and analytics workflows.</p>
+<div class="experience-content">
+<div class="achievements">
+<h4>Key Responsibilities:</h4>
+<ul>
+<li>Database design and management using SQL Server</li>
+<li>Data analytics and reporting solutions</li>
+<li>SQL Server Management Studio operations</li>
+<li>Data engineering and ETL processes</li>
+</ul>
+</div>
+<div class="technologies">
+<h4>Technologies Used:</h4>
+<div class="tech-tags">
+<span class="tech-tag sql">Databases</span>
+<span class="tech-tag sql">SQL Server Management Studio</span>
+<span class="tech-tag python">PySpark</span>
+<span class="tech-tag bi">Azure Databricks</span>
+<span class="tech-tag python">Git</span>
+<span class="tech-tag sql">Database Design</span>
+<span class="tech-tag bi">Microsoft Azure</span>
+<span class="tech-tag sql">Relational Data Modeling</span>
+<span class="tech-tag python">Python</span>
+</div>
+</div>
+</div>
+</div>
+<div class="experience-card">
+<div class="experience-header">
+<div class="experience-title">
+<h3>Data Analyst Intern</h3>
+<p class="company">ELEVATE LABS</p>
+<p class="location">Raipur, Chhattisgarh, India</p>
+</div>
+<div class="experience-date">Jun 2025 - Jul 2025 • 2 mos</div>
+</div>
+<p class="experience-description">During my remote internship at Elevate Labs, I had the opportunity to work on real-time data analysis and visualization projects, gaining hands-on experience in turning raw data into actionable insights.</p>
+<div class="experience-content">
+<div class="achievements">
+<h4>Key Achievements:</h4>
+<ul>
+<li>Completed real-time data analysis projects</li>
+<li>Created interactive visualizations using Python</li>
+<li>Developed Power BI dashboards for business insights</li>
+<li>Gained practical experience in data-driven decision making</li>
+</ul>
+</div>
+<div class="technologies">
+<h4>Technologies Used:</h4>
+<div class="tech-tags">
+<span class="tech-tag python">Python</span>
+<span class="tech-tag powerbi">Power BI</span>
+<span class="tech-tag python">Matplotlib</span>
+<span class="tech-tag python">Seaborn</span>
+<span class="tech-tag python">Machine Learning</span>
+<span class="tech-tag excel">Advanced Excel</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="certifications" class="section">
+<h2 class="section-title">Certifications & Achievements</h2>
+<div class="cert-grid">
+<a href="https://drive.google.com/file/d/1nzxB1XCUs6PTLPx3Y9KjBwdiTcsWLXcj/view?usp=sharing" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon blue">🤖</div>
+<div class="cert-info"><h3>GenAI Mastermind</h3><p class="issuer">Outskill</p></div>
+</div>
+<p>Mastered artificial intelligence fundamentals and advanced prompt engineering techniques. Gained hands-on experience with generative AI tools and learned to implement AI solutions for real-world business applications.</p>
+<span class="cert-badge">2025</span>
+<div class="cert-indicator blue"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/1RsQyBOg0RB_oHoaEbU6s9GyI1__1mUD4/view" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon cyan">📊</div>
+<div class="cert-info"><h3>Tata Data Visualisation</h3><p class="issuer">Forage</p></div>
+</div>
+<p>Enhanced skills in transforming complex data into insightful visualizations. Learned data cleaning methodologies, dashboard design principles, and effective storytelling through data visualization techniques.</p>
+<span class="cert-badge">2025</span>
+<div class="cert-indicator cyan"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/19DbgEeuydA0Q8ZrhUY6ZdRLa0jGPoG0H/view?usp=sharing" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon blue">💼</div>
+<div class="cert-info"><h3>Deloitte Data Analytics</h3><p class="issuer">Forage - Job Simulation</p></div>
+</div>
+<p>Completed real-world data analytics job simulation project. Developed expertise in business analytics workflows, client presentation skills, and data-driven decision-making frameworks used at Deloitte.</p>
+<span class="cert-badge">2025</span>
+<div class="cert-indicator blue"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/19ye57pDgWT8Jr9D-PrU7gn3YWpHYD0Vi/view?usp=sharing" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon orange">📈</div>
+<div class="cert-info"><h3>Goldman Sachs Excel Skills</h3><p class="issuer">Forage - Job Simulation</p></div>
+</div>
+<p>Mastered advanced Excel functions and financial modeling techniques. Gained proficiency in data manipulation, complex formulas, pivot tables, and business intelligence reporting used in investment banking.</p>
+<span class="cert-badge">2024</span>
+<div class="cert-indicator orange"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/16rJ5i5rnQpB1dcmyHIvGMopplHjRemM9/view?usp=drive_link" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon purple">📊</div>
+<div class="cert-info"><h3>Power BI Certification</h3><p class="issuer">Great Learning</p></div>
+</div>
+<p>Developed expertise in creating interactive dashboards and powerful data visualizations. Learned DAX calculations, data modeling, report design, and best practices for business intelligence solutions.</p>
+<span class="cert-badge">2024</span>
+<div class="cert-indicator purple"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/1LW5piYjxh2RnCU2xwy9b_ANMFPoXQ3Kf/view?usp=drive_link" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon pink">🗄️</div>
+<div class="cert-info"><h3>SQL for Data Science</h3><p class="issuer">Great Learning</p></div>
+</div>
+<p>Mastered SQL queries, database design, and data manipulation techniques. Gained hands-on experience with complex joins, subqueries, stored procedures, and optimization strategies for large datasets.</p>
+<span class="cert-badge">2024</span>
+<div class="cert-indicator pink"></div>
+</div>
+</a>
+<a href="https://www.hackerrank.com/profile/priyachakradhar1" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon green">🐍</div>
+<div class="cert-info"><h3>Python Programming</h3><p class="issuer">HackerRank</p></div>
+</div>
+<p>Achieved proficiency in Python programming with strong problem-solving skills. Mastered core Python concepts, data structures, algorithms, and object-oriented programming principles.</p>
+<span class="cert-badge">2024</span>
+<div class="cert-indicator green"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/1TJAi3UK4sJI_ttux6nONRNKzRNqTD7qr/view?usp=drive_link" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon cyan">📊</div>
+<div class="cert-info"><h3>Data Analysis using Excel</h3><p class="issuer">Great Learning</p></div>
+</div>
+<p>Comprehensive training in Excel for data analysis including advanced formulas, data cleaning, statistical analysis, and creating professional dashboards for business insights.</p>
+<span class="cert-badge">2024</span>
+<div class="cert-indicator cyan"></div>
+</div>
+</a>
+<a href="https://drive.google.com/file/d/1ryNtKRCAByXhdf8CdEUCOzPi_tW0P7YH/view?usp=drive_link" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="cert-card">
+<div class="cert-header">
+<div class="cert-icon orange">🐼</div>
+<div class="cert-info"><h3>Pandas Certification</h3><p class="issuer">Kaggle</p></div>
+</div>
+<p>Mastered Python Pandas library for data manipulation and analysis. Learned efficient data cleaning, transformation, aggregation techniques, and working with large datasets for analytical projects.</p>
+<span class="cert-badge">2024</span>
+<div class="cert-indicator orange"></div>
+</div>
+</a>
+</div>
+</section>
+<section id="projects" class="section">
+<h2 class="section-title">Featured Projects</h2>
+<h3 style="color:#00d4ff;font-size:1.5rem;margin:2rem 0 1.5rem;font-weight:600">Power-BI & Excel Dashboard Projects</h3>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header blue">📊</div>
+<div class="project-content">
+<h3>Blinkit Sales Dashboard – Power BI Analysis</h3>
+<p>Interactive Power BI dashboard analyzing Blinkit's sales data, providing insights into outlet performance, product categories, and customer ratings to identify trends and optimize sales strategies.</p>
+<div class="project-tags"><span class="tag">Power BI</span><span class="tag">Data Analysis</span><span class="tag">Data Cleaning</span><span class="tag">Dashboard</span></div>
+<a href="https://github.com/priyachakradhari/Blinkit_Analysis_Project" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header blue">👩‍💻</div>
+<div class="project-content">
+<h3>E-commerce Dashboard using Power BI</h3>
+<p>E-commerce sales dashboard analyzing sales performance, customer trends, and product insights with interactive visualizations.</p>
+<div class="project-tags"><span class="tag">Power BI</span><span class="tag">Dashboard</span><span class="tag">Data Visualization</span><span class="tag">DAX</span></div>
+<a href="https://github.com/priyachakradhari/E-Commerce_Dashboard_Using_Power-BI" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header blue">📊</div>
+<div class="project-content">
+<h3>Sales Analysis Project using Power BI</h3>
+<p>Visual representation of sales data enabling comprehensive analysis and monitoring of sales performance with interactive Power BI dashboards.</p>
+<div class="project-tags"><span class="tag">Power BI</span><span class="tag">Sales Analysis</span><span class="tag">Data Visualization</span><span class="tag">Filters & Slicers</span></div>
+<a href="https://github.com/priyachakradhari/Sales_Dashboard_using-Power-BI" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header blue">🏢</div>
+<div class="project-content">
+<h3>HR Analysis Dashboard Project using Power BI</h3>
+<p>Summary dashboard providing a broad overview of customer service experience and organizational insights within the company.</p>
+<div class="project-tags"><span class="tag">Power BI</span><span class="tag">HR Analytics</span><span class="tag">Dashboard</span><span class="tag">Data Analysis</span></div>
+<a href="https://github.com/priyachakradhari/HR_Dashboard_Using_Power-BI" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header green">📈</div>
+<div class="project-content">
+<h3>Sales Analysis Project using Excel</h3>
+<p>Visual representation of sales data in Excel dashboard format, enabling analysis and monitoring of sales performance against targets.</p>
+<div class="project-tags"><span class="tag">Excel</span><span class="tag">Pivot Tables</span><span class="tag">Dashboard</span><span class="tag">Data Analysis</span></div>
+<a href="https://github.com/priyachakradhari/Sales_Dashboard_using_Excel" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header green">🥼</div>
+<div class="project-content">
+<h3>Healthcare Analysis Dashboard Project using Excel</h3>
+<p>Excel healthcare dashboards enabling healthcare organizations including providers and payers to get better insights into their patient data.</p>
+<div class="project-tags"><span class="tag">Excel</span><span class="tag">Healthcare</span><span class="tag">Data Cleaning</span><span class="tag">Dashboard</span></div>
+<a href="https://github.com/priyachakradhari/Healthcare_dashboard_using_Excel-" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header blue">📦</div>
+<div class="project-content">
+<h3>Amazon Analysis Dashboard using Power BI</h3>
+<p>Comprehensive dashboard diving into Amazon's sales data and trends analysis, efficiently uncovering patterns for strategic decision-making.</p>
+<div class="project-tags"><span class="tag">Power BI</span><span class="tag">E-commerce</span><span class="tag">Data Visualization</span><span class="tag">Trend Analysis</span></div>
+<a href="https://github.com/priyachakradhari/Amazon_Dashboard_Using_Power-BI" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+</div>
+<h3 style="color:#00d4ff;font-size:1.5rem;margin:3rem 0 1.5rem;font-weight:600">SQL Projects</h3>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header pink">🗄️</div>
+<div class="project-content">
+<h3>Hospital Management System SQL Case Study Project</h3>
+<p>Enhancing how patient records and appointments are managed through comprehensive SQL database design and query optimization.</p>
+<div class="project-tags"><span class="tag">SQL</span><span class="tag">Database Design</span><span class="tag">ERD</span><span class="tag">Normalization</span></div>
+<a href="https://github.com/priyachakradhari/Hospital_management_System_SQL_Case_Study-Project" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header pink">📚</div>
+<div class="project-content">
+<h3>Swiggy Dataset Case Study using SQL and Power BI</h3>
+<p>Uncovering trends in food delivery data and enhancing decision-making for Swiggy through advanced SQL queries and Power BI visualizations.</p>
+<div class="project-tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Data Analysis</span><span class="tag">ETL</span></div>
+<a href="https://github.com/priyachakradhari/Data-Driven-Insights-for-Swiggy-Leveraging-SQL-and-Power-BI" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header pink">💼</div>
+<div class="project-content">
+<h3>SQL Case Study: Data Science Jobs Analysis</h3>
+<p>In-depth analysis of Data Science Jobs Dataset using SQL and Power BI to uncover trends in salaries, remote work, employment types, and geographic locations. Includes complex SQL queries with WITH clauses, subqueries, stored procedures, views, and window functions, plus an interactive Power BI dashboard.</p>
+<div class="project-tags"><span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Data Analysis</span></div>
+<a href="https://github.com/priyachakradhari/DataScienceJobs_Complete_Analysis" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+</div>
+<h3 style="color:#00d4ff;font-size:1.5rem;margin:3rem 0 1.5rem;font-weight:600">Python Projects</h3>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header green">🐍</div>
+<div class="project-content">
+<h3>Revenue Impact Analysis in Taxi Industry</h3>
+<p>Unlocking insights and validating assumptions using statistical methods to analyze data and test hypotheses with Python.</p>
+<div class="project-tags"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Statistics</span></div>
+<a href="https://github.com/priyachakradhari/Revenue-Impact-Analysis-in-Taxi-Industry-" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header green">📊</div>
+<div class="project-content">
+<h3>Python Case Study Project</h3>
+<p>Showcasing Python's versatility in data analysis, automation, and more through comprehensive real-world applications and techniques.</p>
+<div class="project-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Data Visualization</span></div>
+<a href="https://github.com/priyachakradhari/Python_Case_Study_Project" class="project-link" target="_blank">View on GitHub <svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section">
+<h2 class="section-title">Let's Connect</h2>
+<div class="contact-container">
+<div class="contact-intro">
+<h3>Ready to Transform Data into Insights?</h3>
+<p>I'm always interested in discussing new opportunities, collaborations, or data analytics projects. Whether you're looking for a data analyst, need consultation, or just want to connect, feel free to reach out!</p>
+</div>
+<div class="contact-grid">
+<a href="mailto:priyachakradhari4@gmail.com" class="contact-card email-card">
+<div class="contact-icon-wrapper">
+<svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+</div>
+<div class="contact-details" style="flex:1">
+<h4>Email</h4>
+<p style="font-size:0.65rem;line-height:1.4;margin:0">priyachakradhari4@gmail.com</p>
+</div>
+<div class="contact-arrow">→</div>
+</a>
+<a href="https://www.linkedin.com/in/priya-chakradhari-22521628a/" class="contact-card linkedin-card" target="_blank">
+<div class="contact-icon-wrapper">
+<svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+</div>
+<div class="contact-details">
+<h4>LinkedIn</h4>
+<p>Connect with me</p>
+</div>
+<div class="contact-arrow">→</div>
+</a>
+<a href="https://github.com/priyachakradhari" class="contact-card github-card" target="_blank">
+<div class="contact-icon-wrapper">
+<svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+</div>
+<div class="contact-details">
+<h4>GitHub</h4>
+<p>View my code</p>
+</div>
+<div class="contact-arrow">→</div>
+</a>
+</div>
+<div class="contact-cta">
+<p class="availability-status"><span class="status-dot"></span>Available for opportunities</p>
+</div>
+</div>
+</section>
+</main>
+<script>
+const c=document.getElementById('networkCanvas'),ctx=c.getContext('2d');let p=[];function resize(){c.width=window.innerWidth;c.height=window.innerHeight}function create(){p=[];const n=Math.min(80,Math.floor(c.width*c.height/15000));for(let i=0;i<n;i++)p.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5,size:Math.random()*2+1})}function draw(){ctx.clearRect(0,0,c.width,c.height);ctx.lineWidth=1;for(let i=0;i<p.length;i++){for(let j=i+1;j<p.length;j++){const dx=p[i].x-p[j].x,dy=p[i].y-p[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<150){ctx.strokeStyle=`rgba(0,212,255,${(150-d)/150*.3})`;ctx.beginPath();ctx.moveTo(p[i].x,p[i].y);ctx.lineTo(p[j].x,p[j].y);ctx.stroke()}}}p.forEach(pt=>{ctx.fillStyle='rgba(0,212,255,.8)';ctx.shadowColor='#00d4ff';ctx.shadowBlur=10;ctx.beginPath();ctx.arc(pt.x,pt.y,pt.size,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;pt.x+=pt.vx;pt.y+=pt.vy;if(pt.x<0||pt.x>c.width)pt.vx*=-1;if(pt.y<0||pt.y>c.height)pt.vy*=-1;pt.x=Math.max(0,Math.min(c.width,pt.x));pt.y=Math.max(0,Math.min(c.height,pt.y))})}function anim(){draw();requestAnimationFrame(anim)}window.addEventListener('resize',()=>{resize();create()});c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top;p.forEach(pt=>{const dx=mx-pt.x,dy=my-pt.y,d=Math.sqrt(dx*dx+dy*dy);if(d<100){const f=(100-d)/100*.02;pt.vx+=dx*f*.01;pt.vy+=dy*f*.01}})});document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();const targetId=this.getAttribute('href');if(targetId==='#'){window.scrollTo({top:0,behavior:'smooth'});return}const t=document.querySelector(targetId);if(t){t.scrollIntoView({behavior:'smooth',block:'start'})}}));resize();create();anim();const obs=new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){en.target.style.opacity='1';en.target.style.transform='translateY(0)';en.target.classList.add('visible')}}),{threshold:.15,rootMargin:'0px 0px -10% 0px'});document.querySelectorAll('.section').forEach(s=>{s.style.opacity='0';s.style.transform='translateY(30px)';s.style.transition='opacity .8s cubic-bezier(0.4, 0, 0.2, 1),transform .8s cubic-bezier(0.4, 0, 0.2, 1)';obs.observe(s)});let scrolling=false;document.addEventListener('wheel',()=>{scrolling=true;setTimeout(()=>scrolling=false,1000)},{passive:true});
+</script>
+</body>
+</html>
